@@ -9,7 +9,7 @@ type person struct {
 
 func main() {
 
-  alex := person{firstName: "Alex", lastName: "Anderson"} // Struct literal
-  fmt.Println(alex) 
-
+  var alex person
+  alex.firstName = "Alex"
+  fmt.Printf("%+v", alex)
 }
